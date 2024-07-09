@@ -1,0 +1,74 @@
+# Organizers
+-
+  id: 0
+  name: "Joyce"
+  surname: "Nabende"
+  title: "General Chair"
+  thumbnailUrl: person.jpg
+  team: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "twitter", link: "https://twitter.com/handle"}
+    - {name: "site", link: "http://site.com/"}
+-
+  id: 2
+  name: "Martin"
+  surname: "Mubangizi"
+  title: "Program Chair"
+  thumbnailUrl: person.jpg
+  team: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "twitter", link: "https://twitter.com/handle"}
+    - {name: "site", link: "http://site.com/"}
+-
+  id: 3
+  name: "Eng"
+  surname: "Bainomugisha"
+  title: "Academia Coordinator"
+  thumbnailUrl: person.jpg
+  team: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "twitter", link: "https://twitter.com/handle"}
+    - {name: "site", link: "http://site.com/"}
+-
+  id: 4
+  name: "Ernest"
+  surname: "Mwebaze"
+  title: "Partnerships Coordinator"
+  thumbnailUrl: person.jpg
+  team: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "twitter", link: "https://twitter.com/handle"}
+    - {name: "site", link: "http://site.com/"}
+-
+  id: 5
+  name: ""
+  surname: ""
+  title: "_ Coordinator"
+  thumbnailUrl: person.jpg
+  team: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "twitter", link: "https://twitter.com/handle"}
+    - {name: "site", link: "http://site.com/"}
+
+-
+id: 5
+  name: "Morine"
+  surname: "Amutorine"
+  title: "PComms Coordinator"
+  thumbnailUrl: person.jpg
+  team: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "twitter", link: "https://twitter.com/handle"}
+    - {name: "site", link: "http://site.com/"}

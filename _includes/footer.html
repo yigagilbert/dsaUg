@@ -1,42 +1,48 @@
-<footer class="page-footer">
-    <div class="container footer-top">
-        <div class="col-md-4 left logo-footer-column">
-            <a class="footer-brand footer-brand-svg" href="{{ site.baseurl }}">
-                <img src="{{site.baseurl}}/assets/img/dsa-new-logo.png" alt="DSA Uganda logo">
-            </a>
-            <div class="footer-description"></div>
-        </div>
-        <div class="col-md-4 left quick-links">
-            <h5>Quick Links</h5>
-            <ul>
-<!--                 <li><a href="/about" class="None">About DSA Uganda</a></li>
-                <li><a href="/chapters/" class="None">Chapters</a></li> -->
-                <li><a href="{{site.baseurl}}/events.html" class="None">Upcoming events</a></li>
-            </ul>
-        </div>
-        <div class="col-md-4 left">
-            <h5>Social</h5>
-            <ul class="social-links">
-                <li><a style="font-size: 20px; margin: 10px 0 5px 0;" class="social-button icon-twitter" href="https://twitter.com/dsa_Uganda" target="_blank"
-                        rel="noopener noreferrer" title="Twitter"></a></li>
-<!--                 <li><a class="social-button icon-linkedin"
-                        href="#" target="_blank"
-                        rel="noopener noreferrer" title="LinkedIn"></a></li> -->
-                <li><a style="font-size: 20px; margin: 10px 10px 5px 10px;" class="social-button icon-youtube" href="https://www.youtube.com/channel/UCG_XDHclKZxP8MknQQYSw-g" target="_blank"
-                        rel="noopener noreferrer" title="YouTube"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="site-info">
-
-                    <div class="copyright">
-                        © <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> DSA
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Begin Footer -->
+<footer id="footer" class="footer">
+	<div class="row">
+		<div class="pull-left col-md-6 col-xs-6">
+			<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300" data-href="{{ site.url }}"></div>
+		</div>
+		<div class="pull-right">
+			<img src="{{site.baseurl}}/{{site.organizerLogo}}" height="60px">
+		</div>
+	</div>
+	<div class="row">
+		{% for block in site.footerBlocks %}
+        {% assign colWidth = 12 | divided_by: forloop.length %}
+		<div class="col-md-{{ colWidth }} col-xs-6">
+			<h5>{{ block.title }}</h5>
+			<ul>
+				{% for linkElement in block.links %}
+				<li><a href="{% if linkElement.permalink != null %} {{ linkElement.permalink | prepend: site.baseurl }} {% else %} {{ linkElement.link }} {% endif %}" {% if linkElement.link != null %}target="_blank"{% endif %}>{{ linkElement.text }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-xs-12">
+			<ul class="social-links">
+				{% for social in site.socialLinks %}
+				<li>
+					<a href="{% if social.permalink != null %} {{ social.permalink | prepend: site.baseurl }} {% else %} {{ social.link }} {% endif %}" target="_blank">
+						<svg class="icon icon-{{ social.icon }}" viewBox="0 0 30 32">
+							<use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-{{ social.icon }}"></use>
+						</svg>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<!-- Please don't delete this line-->
+		<div class="col-md-6">
+			<p class="copyright">
+				Based on <a href="https://github.com/gdg-x/zeppelin" target="_blank">Project Zeppelin</a>
+			</p>
+		</div>
+	</div>
 </footer>
+<!-- End Footer -->
