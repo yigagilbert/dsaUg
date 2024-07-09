@@ -1,0 +1,14 @@
+- name: DSA Uganda
+  link: /
+- name: About DSA Uganda
+  link: /about.html
+- name: Chapters
+  link: /chapters.html
+- name: Upcoming events
+  link: /upcoming.html
+- name: Calendar
+  link: /calendar.html
+- name: Gallery
+  link: /gallery.html
+- name: Data Science Africa
+  link: http://www.datascienceafrica.org/

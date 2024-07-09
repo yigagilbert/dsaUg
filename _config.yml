@@ -1,0 +1,46 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/dsaUganda" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+favicon: "/assets/img/favicon.png"
+collections:
+  events:
+    output: true
+future: true
+
+sass:
+  load_paths:
+    - _sass
+    - /usr/local/lib/ruby/gems/3.0.0/gems/bootstrap-4.6.0/assets/stylesheets/
+
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+      
+#Gallery
+gallerylinks:
+ - {imagename: "foe_bg.jpg", thumbnail: "foe_bg.jpg",  datasubhtml: "DSA Uganda Eastern, Busitema University, Tororo Campus, September 2023,<br>Is Ongoing, Join using the Youtube link below<br> <a href='https://www.youtube.com/watch?v=e5tHetBxMnM' class='btn btn-primary'>Click to Stream live on Youtube <i class='glyphicon glyphicon-youtube'></i></a>", datasubparagraph: ""}
+ - {imagename: "IMG_9541.jpg", thumbnail: "IMG_9541.jpg",  datasubhtml: "Official Logo for Data Science Africa, Uganda (DSAU) Chapter.", datasubparagraph: ""}
+ - {imagename: "IMG_9543.jpg", thumbnail: "IMG_9543.jpg",  datasubhtml: "Panel discussion set up at the Data Science Africa, Uganda (DSAU) Chapter launched on 5th August, 2022 at the National ICT Hub, Nakawa.", datasubparagraph: ""}
+ - {imagename: "IMG_9558.jpg", thumbnail: "IMG_9558.jpg",  datasubhtml: "Dr. Hatwib Mugasa, Executive Director, NITA-U officiates the launch of Data Science Africa, Uganda (DSAU) Chapter, launched on 5th August 2022 at the National ICT Hub, Nakawa. ", datasubparagraph: ""}
+ - {imagename: "IMG_9561.jpg", thumbnail: "IMG_9561.jpg",  datasubhtml: "(L-R) Martin Mubangizi, General Chair, Michael Niyitegeka, Private Sector Coordinator Data Science Africa, Uganda (DSAU) Chapter.", datasubparagraph: ""}
+ - {imagename: "IMG_9589.jpg", thumbnail: "IMG_9589.jpg",  datasubhtml: "Martin Mubangizi, General Chair of DSAU gives a presentation on Data Science Africa.", datasubparagraph: ""}
+# - {imagename: "IMG_9608.jpg", thumbnail: "IMG_9613.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+# - {imagename: "IMG_9613.jpg", thumbnail: "IMG_9613.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+# - {imagename: "IMG_9617.jpg", thumbnail: "IMG_9617.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+# - {imagename: "IMG_9628.jpg", thumbnail: "IMG_9633.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+ - {imagename: "IMG_9628.jpg", thumbnail: "IMG_9628.jpg",  datasubhtml: "Dr. Ernest Mwebaze, DSAU Strategy lead, gives a presentation on the roadmap.", datasubparagraph: ""}
+ - {imagename: "IMG_9633.jpg", thumbnail: "IMG_9633.jpg",  datasubhtml: "Unveiling of the Data Science Africa, Uganda Chapter logo.", datasubparagraph: ""}
+# - {imagename: "IMG_9648.jpg", thumbnail: "IMG_9648.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+ - {imagename: "IMG_9654.jpg", thumbnail: "IMG_9654.jpg",  datasubhtml: "Dr. Wasswa William, Senior Lecturer at Mbarara University gives keynote speech.", datasubparagraph: ""}
+# - {imagename: "IMG_9662.jpg", thumbnail: "IMG_9662.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+ - {imagename: "IMG_9707.jpg", thumbnail: "IMG_9707.jpg",  datasubhtml: "Dr. Tony Oyanna, Principal of Makerere College of Computing and Information Sciences part of panel discussion on Harnessing Data and AI for Uganda’s social-economic development.", datasubparagraph: ""}
+ - {imagename: "IMG_9751.jpg", thumbnail: "IMG_9751.jpg",  datasubhtml: "Group photo of all participants at the Data Science Africa Uganda (DSAU) Chapter launched on 5th August, 2022 at the National ICT Hub, Nakawa.", datasubparagraph: ""}
+ - {imagename: "IMG_9807.jpg", thumbnail: "IMG_9807.jpg",  datasubhtml: "Members of Macroni lab exhibiting a project on Computer aided diagnosis system for cervical cancer.", datasubparagraph: ""}
+ - {imagename: "IMG_9809.jpg", thumbnail: "IMG_9809.jpg",  datasubhtml: "Members of Makerere AI lab exhibiting a project on AI-based diagnosis for Malaria. ", datasubparagraph: ""}
+ - {imagename: "IMG_9814.jpg", thumbnail: "IMG_9814.jpg",  datasubhtml: "Members of Pulse Lab Kampala exhibiting on the radio project aimed at mining data from analogue radios.", datasubparagraph: ""}
+# - {imagename: "IMG_9817.jpg", thumbnail: "IMG_9817.jpg",  datasubhtml: "Caption Comes here", datasubparagraph: ""}
+ 
+ 

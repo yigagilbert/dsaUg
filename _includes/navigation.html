@@ -1,0 +1,79 @@
+<nav>
+
+
+
+  <!-- {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %} -->
+</nav>
+
+<header class="navs navs-v2">
+  <div class="navbar navbar-secondary navbar-static-top" role="navigation" aria-label="Main site navigation">
+      <div class="container">
+          <div class="navbar-left">
+            <a class="navbar-brand navbar-customizable-logo" href="{{site.baseurl}}/">
+                <img src="{{site.baseurl}}/assets/img/dsa-new-logo.png" alt="DSA Uganda logo">
+            </a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="glyphicon-minus"></span>
+              <span class="glyphicon-minus"></span>
+              <span class="glyphicon-minus"></span>
+          </button>
+          <a role="button" aria-haspopup="dialog" aria-label="search" class="icon-search mobile" data-toggle="modal" data-target="#globalSearchModal" tabindex="0"></a>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="navbar-menu">
+<!--                 <a href="{{site.baseurl}}/" class="dropdown-toggle None" id="involved-menu" data-toggle="dropdown"> -->
+                <a href="{{site.baseurl}}/" id="involved-menu"> About DSA Uganda </a>
+<!--                 <ul class="main-menu dropdown-menu" role="menu" aria-labelledby="involved-menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{site.baseurl}}/about.html" class="None">About</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{site.baseurl}}/about/call-applications.html" class="None">Call for applications</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{site.baseurl}}/about/launch.html" class="None">Events</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{site.baseurl}}/about/news.html" class="None">News</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{{site.baseurl}}/about/organizers.html" class="None">Organizers</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/about/partners.html" class="None">Partners</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="{% link about/partners.md %}" class="None">Partners</a></li>
+                </ul> -->
+              </li>
+<!--               <li class="navbar-menu">
+                <a href="{{site.baseurl}}/chapters.html" class="None">Chapters</a>
+              </li> -->
+              <li class="navbar-menu">
+                <a href="{{site.baseurl}}/past_events.html" class="None">Past events</a>
+              </li>
+              <li class="navbar-menu">
+                <a href="{{site.baseurl}}/upcoming_events.html" class="None">Upcoming events</a>
+              </li>
+              <li class="navbar-menu">
+                <a href="{{site.baseurl}}/calendar.html" class="None">Calendar</a>
+              </li>
+              <li class="navbar-menu">
+                <a href="{{site.baseurl}}/gallery.html" class="None">Gallery</a>
+              </li>
+              <li class="navbar-menu">
+                <a target="_blank" href="http://www.datascienceafrica.org/" class="None">Data Science Africa</a>
+              </li>
+              <li class="navbar-menu hidden-sm hidden-xs">
+                <a role="button" aria-haspopup="dialog" aria-label="search" class="icon-search" data-toggle="modal" data-target="#globalSearchModal" tabindex="0"></a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="globalSearchModal" tabindex="-1" role="dialog" aria-labelledby="globalSearchModalTitle" aria-hidden="true">
+    <div class="modal-dialog container" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="modal-body">
+          <div id="react-search-modal-container"><div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-1" aria-expanded="false" class="search-modalStyles-outerContainer-1OIYR global-search outer-container"><div class="ais-SearchBox"><form novalidate="" class="ais-SearchBox-form" role="search" action=""><input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" aria-label="search" placeholder="Search here..." class="ais-SearchBox-input" value=""></form></div><div id="react-autowhatever-1" role="listbox" class=""></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</header>

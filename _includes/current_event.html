@@ -1,0 +1,173 @@
+<div id="event_page" itemscope="" itemtype="http://schema.org/Event">
+    <hr class="event-separator">
+    <div id="event-banner-container" class="jumbotron responsive-event-banner">
+        <div class="color-overlay"></div>
+        <div class="event-page container">
+            <div class="col-md-12 general-event-banner">
+                <h1 class="event-title-heading">
+                    <span class="font_banner2" itemprop="name">Pre-launch event, April 2021</span>
+                </h1>
+                <h2 class="city-date">
+                    <a href="/gdg-nyc/" title="Data Science Africa - Uganda Chapter" class="event-chapter-title">DSA UG</a>
+                    <div class="event-date-time">Apr 30, 8:30 AM (EAT)</div>
+                </h2>
+                <span itemprop="startDate" content="2021-04-27T12:30:00+00:00"></span>
+                <span itemprop="endDate" content="2021-04-28T03:15:00+00:00"></span>
+                <p class="event-short-description-on-banner">In collaboration with Academia, Governement agencies, Private sector and 
+                    UN agancies we are excited 💯 to bring you the pre-launch event of DSA Uganda Chapter 🇺🇬
+                </p>
+                <aside id="react-root-event-tags">
+                    <div class="MuiBox-root jss5 jss3 jss2 jss1 event-tags">
+                        <div class="MuiChip-root MuiChip-outlined" data-testid="chip"><span
+                                class="MuiChip-label">Data</span></div>
+                        <div class="MuiChip-root MuiChip-outlined" data-testid="chip"><span
+                                class="MuiChip-label">Applications</span></div>
+                        <div class="MuiChip-root MuiChip-outlined" data-testid="chip"><span
+                                class="MuiChip-label">Case Studies</span></div>
+                        <div class="MuiChip-root MuiChip-outlined" data-testid="chip"><span
+                                class="MuiChip-label">Policy</span></div>
+                        <div class="MuiChip-root MuiChip-outlined" data-testid="chip"><span
+                                class="MuiChip-label">Opportunities</span></div>
+                    </div>
+                </aside>
+                <div id="virtual-join-button-container" itemscope="" itemprop="location"
+                    itemtype="http://schema.org/VirtualLocation">
+                    <span itemprop="url" content="https://gdg.community.dev/e/mzdf4g/"></span>
+                </div>
+                <div id="javascript-event-not-ready"></div>
+            </div>
+        </div>
+    </div>
+    <div class="description-container unpurchased-virtual-no-info ">
+        <div class="container">
+            <h2 class="general-h1 event-description--title">About this event</h2>
+            <div class="event-description general-body">
+                <h2>📄<b>Agenda (all times are in EAT)</b></h2>
+                <p>9:30 AM: Prayer and Introductions</p>
+                <h3>Background on DSA Uganda</h3>
+                <p>10:00 AM Background on DSA by Ernest Mwebaze</p>
+                <p>10:05 AM: Background on DSA by Joyce Nabende</p>
+                <h3>Data Science Case Studies in Uganda</h3>
+                <p>10:10 AM: Health Case Studies by Rose Nakasi</p>
+                <p>10:15 AM: Agriculture Case Studies by Godliver Owomugisha</p>
+                <p>10:20 AM: Environment Case Studies by Lillian Muyama</p>
+                <p>10:25 AM: Utility  Case Studies by Francis (Umeme)</p>
+                <p>10:30 AM: Telecoms Case Studies by William Senfuma (MTN)</p>
+                <p>10:40 AM: Banking Case Studies by ?? (Stanbic)</p>
+                <p>10:50 AM: Statistics Case Studies by ?? (UBOS)</p>
+                <p>10:55 AM: ?? Case Studies by Ivan Mukiibi (GIZ, FAIR Project)</p>
+                <p>11:10 AM: ?? Case Studies by ?? (UP Accelerator)</p>
+                <p>11:15 AM: ?? Case Studies by Martin Mubangizi (Pulse Lab Kampala)</p>
+                <h3>Break out rooms by theme (5 minutes to grab a cup of coffee and join rooms)</h3>
+                <p>11:25 AM: Data, Applications, Policy, Opportunities</p>
+                <p>11:45 PM: Ask Me Anything Session by Engineer Bainomugisha</p>
+                <p>12:00 PM: Closing</p>
+            </div>
+        </div>
+    </div>
+    <div class="chapter has-people-cards-v2">
+        <div class="hosts">
+            <h1 class="event-page general-h1">
+                Speakers
+            </h1>
+            <div class="people-cards">
+                {% for speaker in site.data.speakers %}
+                <li class="people-card general-card" itemprop="performer" itemscope=""
+                    itemtype="http://schema.org/Person">
+                    <img itemprop="image"
+                        src="{{site.baseurl}}{{ speaker.image }}"
+                        alt="{{ speaker.name}}" 
+                        onerror="this.onerror = null;
+                                 this.src = '{{site.baseurl}}/assets/img/placeholder_avatar.png';" 
+                        class="people-card--avatar">
+                    <a href="{{ speaker.twitter }}" rel="nofollow" class="icon-twitter people-card--twitter"></a>
+                    <div class="people-card--text">
+                        <h2 itemprop="name" class="people-card--name">{{ speaker.name }}</h2>
+                        <p class="people-card--title">{{ speaker.title }}</p>
+                        <p class="people-card--company">{{ speaker.company }}</p>
+                    </div>
+                    <a class="btn btn-secondary" href="/u/m5t737/">View Profile</a>
+                </li>
+                {% endfor %}
+            </div>
+            <div class="modal fade and carousel slide modal-carousel" id="hostsbios" tabindex="-1">
+                <div class="carousel-inner">
+                </div>
+            </div>
+        </div>
+        <div class="hosts">
+            <h1 class="event-page general-h1">
+                Organizers
+            </h1>
+            <div class="people-cards">
+                {% for organizer in site.data.organizers %}
+                <li class="people-card general-card" itemprop="performer" itemscope=""
+                    itemtype="http://schema.org/Person">
+                    <img itemprop="image"
+                        src="{{site.baseurl}}{{ organizer.image }}"
+                        alt="{{ organizer.name }}" 
+                        onerror="this.onerror = null;
+                                 this.src = '{{site.baseurl}}/assets/img/placeholder_avatar.png';" 
+                        class="people-card--avatar">
+                    <a href="{{ organizer.twitter }}" rel="nofollow" class="icon-twitter people-card--twitter"></a>
+                    <div class="people-card--text">
+                        <h2 itemprop="name" class="people-card--name">{{ organizer.name }}</h2>
+                        <p class="people-card--title">{{ organizer.title }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </div>
+            <div class="modal fade and carousel slide modal-carousel" id="hostsbios" tabindex="-1">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <img class="picture" src="" alt=" ()">
+                            <h4 class="name"></h4>
+                            <h5 class="company"></h5>
+                            <div class="bio"></div>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <img class="picture" src="" alt=" ()">
+                            <h4 class="name"></h4>
+                            <h5 class="company"></h5>
+                            <div class="bio"></div>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <img class="picture" src="" alt=" ()">
+                            <h4 class="name"></h4>
+                            <h5 class="company"></h5>
+                            <div class="bio"></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#hostsbios" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#hostsbios" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        <div class="hosts">
+            <h1 class="event-page general-h1">
+                Partners
+            </h1>
+            <div class="people-cards">
+                Sunbird AI, Makerere University, Busitema University, AirQo, Umeme, MTN, Stanbic, UBOS, GIZ, 
+                    Fair Project, UP Accelerator, Pulse Lab Kampala
+            </div>
+            <div class="modal fade and carousel slide modal-carousel" id="hostsbios" tabindex="-1">
+                <div class="carousel-inner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="event-separator">
+</div>
